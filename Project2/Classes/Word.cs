@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Project2
 {
-    class Word
+    class Word : IWord
     {
-        public string Value { get; private set; }
-        public HashSet<int> SestenseNumbers { get; private set; }
-        public int CountInText { get; private set; }
+        public string Value { get; set; }
+        public HashSet<int> SestenseNumbers { get; set; }
+        public int CountInText { get; set; }
 
-        public Word(string value)
+        /*public Word(string value)
         {
             this.Value = value;
-        }
+        }*/
+
 
 
 
