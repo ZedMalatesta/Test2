@@ -9,13 +9,14 @@ namespace Project2
     class Word : IWord
     {
         public string Value { get; set; }
-        public HashSet<int> SentenceNumbers { get; set; }
+        public HashSet<int> LineNumber { get; set; }
         public int CountInText { get; set; }
 
         /*public Word(string value)
         {
             this.Value = value;
         }*/
+
 
 
 

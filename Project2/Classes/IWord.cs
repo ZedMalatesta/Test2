@@ -5,7 +5,7 @@ namespace Project2
     public interface IWord
     {
         int CountInText { get; }
-        HashSet<int> SentenceNumbers { get; }
+        HashSet<int> LineNumber { get; }
         string Value { get; }
     }
 }

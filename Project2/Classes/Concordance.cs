@@ -8,6 +8,9 @@ namespace Project2
 {
     class Concordance
     {
-        private Dictionary<char, Word> ABIndex = new Dictionary<char, Word>();
+        private Dictionary<char, IEnumerable<IWord>> ABIndex { get; set; }
+
+
+
     }
 }
