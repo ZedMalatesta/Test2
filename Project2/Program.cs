@@ -14,7 +14,7 @@ namespace Project2
     {   
         static void Main(string[] args)
         {
-            string textfilepath = @"C:\Users\Zedd\Documents\Visual Studio 2015\Projects\Project2\Resources\strug.txt";
+            string textfilepath = @"C:\Users\Zedd\Documents\Visual Studio 2015\Projects\Project2\Resources\poe.txt";
             int N = 1;
 
             Writer.ConcordanceWriter(@"C:\Users\Zedd\Documents\Visual Studio 2015\Projects\Project2\Resources\out.txt", Reader.CorcondanceCreator(textfilepath, N));

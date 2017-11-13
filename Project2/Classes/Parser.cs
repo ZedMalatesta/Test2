@@ -10,7 +10,7 @@ namespace Project2.Classes
 {
     static class Parser
     {
-        public static Dictionary<string, IEnumerable<IWord>> CreateConcordance(IEnumerable<IWord> en)
+        public static Dictionary<string, IEnumerable<IWord>> CreateWordDictionary(IEnumerable<IWord> en)
         {
             return en.OrderBy(x => x.Value)
                 .GroupBy(x => x.Value.Substring(0, 1)
@@ -22,7 +22,7 @@ namespace Project2.Classes
         {
             return en1.Concat(en2)
                 .GroupBy(x => x.Value)
-                .Select(x => new Word (x.Key, x.Sum(y => y.CountInText), x.SelectMany(y=>y.PageNumber)));
+                .Select(x => new Word(x.Key, x.Sum(y => y.CountInText), x.SelectMany(y=>y.PageNumber)));
         }
 
         public static IEnumerable<IWord> SplitIntoWords(string text, int number)

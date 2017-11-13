@@ -30,7 +30,7 @@ namespace Project2.Classes
                 }
             }
 
-            return new Concordance(Parser.CreateConcordance(stack));
+            return new Concordance(Parser.CreateWordDictionary(stack));
         }
     }
 }
